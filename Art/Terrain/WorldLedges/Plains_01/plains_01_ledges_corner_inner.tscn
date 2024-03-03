@@ -1,0 +1,83 @@
+[gd_scene load_steps=8 format=3 uid="uid://bpwqfmo2vga87"]
+
+[ext_resource type="Material" uid="uid://cvgksxk5ky26i" path="res://Art/poly.cam AI generated textures/dirt.tres" id="1_i3ch2"]
+[ext_resource type="Material" uid="uid://djuf0llv76g7c" path="res://Art/poly.cam AI generated textures/grass.tres" id="2_r3l1h"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_srwmj"]
+resource_name = "dirt"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+roughness = 0.5
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_w7nb4"]
+resource_name = "grass"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_6rbv6"]
+_surfaces = [{
+"aabb": AABB(0.469466, -0.5, 0.469466, 0.030534, 0.465722, 0.030544),
+"format": 4097,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 2, 0, 0, 0, 1, 0, 3, 0),
+"name": "dirt",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(216, 93, 240, 62, 80, 113, 12, 189, 0, 0, 0, 63, 0, 0, 0, 63, 80, 113, 12, 189, 217, 93, 240, 62, 216, 93, 240, 62, 0, 0, 0, 191, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 191, 217, 93, 240, 62)
+}, {
+"aabb": AABB(-0.5, -0.0337546, -0.5, 1, 0.0337646, 1.00001),
+"format": 4097,
+"index_count": 18,
+"index_data": PackedByteArray(4, 0, 6, 0, 7, 0, 4, 0, 3, 0, 6, 0, 1, 0, 7, 0, 0, 0, 1, 0, 4, 0, 7, 0, 2, 0, 6, 0, 3, 0, 0, 0, 5, 0, 1, 0),
+"name": "grass",
+"primitive": 3,
+"vertex_count": 8,
+"vertex_data": PackedByteArray(0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 255, 255, 255, 190, 0, 0, 0, 63, 74, 66, 10, 189, 0, 0, 0, 63, 0, 0, 0, 63, 254, 250, 33, 188, 203, 107, 251, 62, 0, 0, 0, 63, 0, 0, 0, 0, 217, 93, 240, 62, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 203, 107, 251, 62, 0, 251, 33, 188, 0, 0, 0, 63, 216, 93, 240, 62, 0, 0, 128, 177, 0, 0, 0, 63)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_04wjt"]
+resource_name = "Plains_01_ledges_Plane_002"
+_surfaces = [{
+"aabb": AABB(0.469466, -0.5, 0.469466, 0.030534, 0.465722, 0.030544),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63),
+"format": 4119,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 2, 0, 0, 0, 1, 0, 3, 0),
+"material": SubResource("StandardMaterial3D_srwmj"),
+"name": "dirt",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(216, 93, 240, 62, 80, 113, 12, 189, 0, 0, 0, 63, 255, 191, 255, 127, 255, 255, 255, 191, 0, 0, 0, 63, 80, 113, 12, 189, 217, 93, 240, 62, 255, 191, 255, 127, 255, 255, 255, 191, 216, 93, 240, 62, 0, 0, 0, 191, 0, 0, 0, 63, 255, 191, 255, 127, 255, 255, 255, 191, 0, 0, 0, 63, 0, 0, 0, 191, 217, 93, 240, 62, 255, 191, 255, 127, 255, 255, 255, 191)
+}, {
+"aabb": AABB(-0.5, -0.0337546, -0.5, 1, 0.0337646, 1.00001),
+"attribute_data": PackedByteArray(0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63, 0, 0, 0, 0, 0, 0, 128, 63),
+"format": 4119,
+"index_count": 18,
+"index_data": PackedByteArray(4, 0, 6, 0, 7, 0, 4, 0, 3, 0, 6, 0, 1, 0, 9, 0, 0, 0, 1, 0, 8, 0, 9, 0, 2, 0, 6, 0, 3, 0, 0, 0, 5, 0, 1, 0),
+"material": SubResource("StandardMaterial3D_w7nb4"),
+"name": "grass",
+"primitive": 3,
+"vertex_count": 10,
+"vertex_data": PackedByteArray(0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 255, 127, 255, 255, 255, 255, 255, 191, 0, 0, 0, 63, 0, 0, 0, 0, 255, 255, 255, 190, 255, 127, 255, 255, 255, 255, 255, 191, 0, 0, 0, 63, 74, 66, 10, 189, 0, 0, 0, 63, 230, 181, 49, 148, 255, 255, 255, 191, 0, 0, 0, 63, 254, 250, 33, 188, 203, 107, 251, 62, 54, 167, 144, 177, 255, 255, 255, 191, 0, 0, 0, 63, 0, 0, 0, 0, 217, 93, 240, 62, 0, 128, 254, 255, 255, 255, 255, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 255, 127, 255, 255, 255, 255, 255, 191, 203, 107, 251, 62, 0, 251, 33, 188, 0, 0, 0, 63, 54, 167, 144, 177, 255, 255, 255, 191, 216, 93, 240, 62, 0, 0, 128, 177, 0, 0, 0, 63, 254, 127, 253, 255, 255, 255, 255, 191, 0, 0, 0, 63, 0, 0, 0, 0, 217, 93, 240, 62, 255, 127, 255, 255, 255, 255, 255, 191, 216, 93, 240, 62, 0, 0, 128, 177, 0, 0, 0, 63, 255, 127, 255, 255, 255, 255, 255, 191)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_6rbv6")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_vorro"]
+
+[node name="Plains_01_ledges_corner_inner" type="StaticBody3D"]
+
+[node name="Plains_01_ledges_corner_inner" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_04wjt")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_i3ch2")
+surface_material_override/1 = ExtResource("2_r3l1h")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_vorro")

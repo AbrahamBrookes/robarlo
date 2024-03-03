@@ -1,0 +1,54 @@
+[gd_scene load_steps=6 format=3 uid="uid://dqhswuw1hrc6n"]
+
+[ext_resource type="Material" uid="uid://cvgksxk5ky26i" path="res://Art/poly.cam AI generated textures/dirt.tres" id="1_saois"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_df7hd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y0oac"]
+resource_name = "dirt"
+cull_mode = 2
+vertex_color_use_as_albedo = true
+albedo_color = Color(0.906332, 0.906332, 0.906332, 1)
+roughness = 0.5
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_o8f6c"]
+_surfaces = [{
+"aabb": AABB(0.469466, -0.5, 0.469466, 0.030534, 0.50001, 0.030544),
+"format": 4097,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 2, 0, 0, 0, 1, 0, 3, 0),
+"name": "dirt",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(216, 93, 240, 62, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 217, 93, 240, 62, 216, 93, 240, 62, 0, 0, 0, 191, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 191, 217, 93, 240, 62)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_uwvoo"]
+resource_name = "Plains_01_ledges_Plane_007"
+_surfaces = [{
+"aabb": AABB(0.469466, -0.5, 0.469466, 0.030534, 0.50001, 0.030544),
+"attribute_data": PackedByteArray(114, 117, 38, 56, 91, 253, 127, 63, 67, 186, 38, 56, 68, 65, 104, 63, 103, 253, 127, 63, 102, 253, 127, 63, 103, 253, 127, 63, 66, 65, 104, 63),
+"format": 4119,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 2, 0, 0, 0, 1, 0, 3, 0),
+"material": SubResource("StandardMaterial3D_y0oac"),
+"name": "dirt",
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(216, 93, 240, 62, 0, 0, 0, 0, 0, 0, 0, 63, 255, 191, 255, 127, 255, 127, 0, 128, 0, 0, 0, 63, 0, 0, 0, 0, 217, 93, 240, 62, 255, 191, 255, 127, 255, 127, 0, 128, 216, 93, 240, 62, 0, 0, 0, 191, 0, 0, 0, 63, 255, 191, 255, 127, 255, 127, 0, 128, 0, 0, 0, 63, 0, 0, 0, 191, 217, 93, 240, 62, 255, 191, 255, 127, 255, 127, 0, 128)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_o8f6c")
+
+[node name="plains_01_ledges_corner_inner_cliff" type="StaticBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_df7hd")
+
+[node name="plains_01_ledges_corner_inner_cliff" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 2, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("ArrayMesh_uwvoo")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_saois")

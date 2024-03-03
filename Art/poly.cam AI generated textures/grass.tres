@@ -1,0 +1,11 @@
+[gd_resource type="StandardMaterial3D" load_steps=3 format=3 uid="uid://djuf0llv76g7c"]
+
+[ext_resource type="Texture2D" uid="uid://05fla6iyox0f" path="res://Art/poly.cam AI generated textures/grass/grass_01_albedo.jpg" id="1_j7u1y"]
+[ext_resource type="Texture2D" uid="uid://cg0cp6trqeqdw" path="res://Art/poly.cam AI generated textures/grass/grass_01_roughness.jpg" id="2_74xpb"]
+
+[resource]
+albedo_texture = ExtResource("1_j7u1y")
+roughness_texture = ExtResource("2_74xpb")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true
+uv1_world_triplanar = true

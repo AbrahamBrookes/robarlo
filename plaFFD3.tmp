@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://5oyo75w8bmvq"]
+
+[ext_resource type="Script" path="res://player_character.gd" id="1_yaems"]
+[ext_resource type="PackedScene" uid="uid://diwpg0wjbu1s8" path="res://Art/Player/Character/kora_toon.tscn" id="2_3101g"]
+[ext_resource type="Script" path="res://player_camera_pivot.gd" id="2_x5q6m"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_htfwu"]
+radius = 0.15
+height = 0.8
+
+[node name="Node3D" type="Node3D"]
+
+[node name="PlayerCharacter" type="CharacterBody3D" parent="."]
+script = ExtResource("1_yaems")
+
+[node name="kora_toon" parent="PlayerCharacter" instance=ExtResource("2_3101g")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="PlayerCharacter"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.42, 0)
+shape = SubResource("CapsuleShape3D_htfwu")
+
+[node name="PlayerCameraPivot" type="Node3D" parent="."]
+script = ExtResource("2_x5q6m")
+
+[node name="Camera3D" type="Camera3D" parent="PlayerCameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 0.658125, 0.752909, 0, -0.752909, 0.658125, -4.76837e-07, 5.11775, 3.42914)

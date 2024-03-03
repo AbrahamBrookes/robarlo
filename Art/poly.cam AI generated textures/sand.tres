@@ -1,0 +1,8 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://cp037xj2vdfwp"]
+
+[ext_resource type="Texture2D" uid="uid://balsh1emswo73" path="res://Art/poly.cam AI generated textures/sand/albedo.jpg" id="1_rvu3a"]
+
+[resource]
+albedo_texture = ExtResource("1_rvu3a")
+uv1_triplanar = true
+uv1_world_triplanar = true

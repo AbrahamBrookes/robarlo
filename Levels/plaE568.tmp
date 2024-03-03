@@ -1,0 +1,58 @@
+[gd_scene load_steps=10 format=3 uid="uid://dreof5fl2e6cd"]
+
+[ext_resource type="Texture2D" uid="uid://05fla6iyox0f" path="res://Art/Terrain/grass/grass_01_albedo.jpg" id="1_4daxe"]
+[ext_resource type="PackedScene" uid="uid://5oyo75w8bmvq" path="res://player_character.tscn" id="1_p6mi5"]
+[ext_resource type="Texture2D" uid="uid://cg0cp6trqeqdw" path="res://Art/Terrain/grass/grass_01_roughness.jpg" id="2_3v8ga"]
+[ext_resource type="Script" path="res://Levels/Area3DHurt.gd" id="4_4c73y"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_anda7"]
+size = Vector3(30, 1, 20)
+
+[sub_resource type="BoxMesh" id="BoxMesh_4xyxo"]
+lightmap_size_hint = Vector2i(254, 166)
+size = Vector3(30, 1, 20)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_pehpa"]
+albedo_texture = ExtResource("1_4daxe")
+roughness_texture = ExtResource("2_3v8ga")
+uv1_scale = Vector3(0.2, 0.2, 0.2)
+uv1_triplanar = true
+uv1_world_triplanar = true
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_8x5b1"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_a2rmj"]
+
+[node name="PlayerCharacterTestLevel" type="Node3D"]
+
+[node name="GroundPlane" type="StaticBody3D" parent="."]
+disable_mode = 1
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="GroundPlane"]
+shape = SubResource("BoxShape3D_anda7")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="GroundPlane"]
+mesh = SubResource("BoxMesh_4xyxo")
+surface_material_override/0 = SubResource("StandardMaterial3D_pehpa")
+
+[node name="PlayerCharacter" parent="." instance=ExtResource("1_p6mi5")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.937786, -0.127144, -0.323096, -0.21104, 0.947651, 0.239624, 0.275715, 0.292903, -0.915527, 2.56828, 1.48312, 4.3281)
+light_color = Color(0.878431, 0.94902, 0.941176, 1)
+shadow_enabled = true
+shadow_normal_bias = 10.0
+shadow_blur = 0.238
+
+[node name="Area3D" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -2)
+script = ExtResource("4_4c73y")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+shape = SubResource("BoxShape3D_8x5b1")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Area3D"]
+mesh = SubResource("BoxMesh_a2rmj")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]

@@ -1,0 +1,46 @@
+[gd_scene load_steps=6 format=3 uid="uid://lhsyimvfset4"]
+
+[ext_resource type="Material" uid="uid://djuf0llv76g7c" path="res://Art/poly.cam AI generated textures/grass.tres" id="1_thnhq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_rjwoi"]
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_64mnw"]
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1.00001),
+"format": 4097,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191)
+}]
+blend_shape_mode = 0
+
+[sub_resource type="ArrayMesh" id="ArrayMesh_816b1"]
+resource_name = "Plains_01_ledges_Plane_004"
+_surfaces = [{
+"aabb": AABB(-0.5, 0, -0.5, 1, 1e-05, 1.00001),
+"attribute_data": PackedByteArray(113, 249, 127, 63, 0, 32, 210, 56, 88, 220, 209, 56, 0, 160, 209, 56, 111, 249, 127, 63, 115, 249, 127, 63, 90, 172, 209, 56, 112, 249, 127, 63),
+"format": 4119,
+"index_count": 6,
+"index_data": PackedByteArray(0, 0, 3, 0, 1, 0, 0, 0, 2, 0, 3, 0),
+"material": SubResource("StandardMaterial3D_rjwoi"),
+"primitive": 3,
+"vertex_count": 4,
+"vertex_data": PackedByteArray(0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 63, 255, 127, 255, 255, 0, 0, 255, 191, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 63, 255, 127, 255, 255, 0, 0, 255, 191, 0, 0, 0, 191, 0, 0, 0, 0, 0, 0, 0, 191, 255, 127, 255, 255, 0, 0, 255, 191, 0, 0, 0, 63, 0, 0, 0, 0, 0, 0, 0, 191, 255, 127, 255, 255, 0, 0, 255, 191)
+}]
+blend_shape_mode = 0
+shadow_mesh = SubResource("ArrayMesh_64mnw")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5520n"]
+
+[node name="plains_01_ledges_top" type="StaticBody3D"]
+
+[node name="ledge_grass_01_top" type="MeshInstance3D" parent="."]
+mesh = SubResource("ArrayMesh_816b1")
+skeleton = NodePath("")
+surface_material_override/0 = ExtResource("1_thnhq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
+shape = SubResource("BoxShape3D_5520n")

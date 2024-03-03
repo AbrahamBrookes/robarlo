@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://y81qe2axsnx"]
+
+[ext_resource type="PackedScene" uid="uid://bst3pf83nx3ht" path="res://Art/Gameplay/pushy_crate/pushy_crate.glb" id="1_vn6b6"]
+[ext_resource type="Script" path="res://Art/Gameplay/pushy_crate/pushy_crate.gd" id="2_8kw3k"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t2tnx"]
+
+[node name="pushy_crate_collider" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+script = ExtResource("2_8kw3k")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_t2tnx")
+
+[node name="mesh" parent="." instance=ExtResource("1_vn6b6")]

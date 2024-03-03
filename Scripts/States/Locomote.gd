@@ -5,7 +5,7 @@ class_name Locomote
 var gravity = ProjectSettings.get_setting("physics/3d/default_gravity")
 @export var mass = 10.0
 
-@export var SPEED = 10
+@export var SPEED = 8
 @export var LERP_SPEED = 0.35
 	
 func Enter(extra_data = null):

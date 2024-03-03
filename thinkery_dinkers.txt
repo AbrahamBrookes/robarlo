@@ -1,0 +1,58 @@
+# Skyscraper Heist Game Level Design Document
+## Overview
+This document outlines key environmental gameplay elements for a video game where the player scales a skyscraper, evading guards and stealing high-value items. The design emphasizes stealth, strategy, and action, providing players with diverse gameplay experiences as they navigate through contrasting environments within the skyscraper.
+
+## Gameplay Elements
+### Places to Hide
+- Maintenance Areas: Service corridors and utility rooms off the main pathways provide stealth routes and hiding spots.
+- Landscaped Terraces: Incorporate green spaces for natural cover, blending stealth and beauty.
+- Air Ducts and False Ceilings: Players can evade guards by navigating through the building's hidden veins.
+- Office Cubicles: Provide ample cover for stealth maneuvers.
+- Under-construction Areas: Offer raw materials and machinery for concealment.
+- Decorative Features: Large sculptures or indoor plants in lobbies or common areas can serve as temporary hiding spots.
+- Dynamic Structures: Introduce movable walls or furniture that players can manipulate to create temporary hiding spots or blockades.
+- Holographic Projections: Utilize futuristic tech to allow players to project holographic decoys or camouflage themselves against walls.
+- Vertical Gardens: Use living walls not just for aesthetics but as organic cover, blending stealth with environmental consciousness.
+
+### Varying High and Low Action Gameplay Areas
+- Lobby and Public Spaces: High-risk areas with dense guard patrols and surveillance but rich in escape options.
+- Construction Zones: Unfinished floors offer a mix of danger and opportunity, with less security but challenging navigation.
+- Office Spaces: Designed for stealth with plenty of obstacles for cover and slow-paced gameplay.
+- Corporate Offices: Sleek, modern aesthetics with high-tech security systems.
+- Residential Floors: Varied layouts with less formal security, offering a mix of stealth and interaction with NPCs.
+- Utility Floors: Stark, industrial settings with environmental hazards and unique movement challenges.
+- Luxury Apartments/Penthouses: Display stark contrasts with lavish interiors, introducing unique security challenges.
+- Rooftop Gardens: Offer a breath of fresh air with outdoor environments, adding variety and strategic advantages, weather effects like rain preventing scaling the outside walls
+- Server Rooms/Data Centers: Present a high-tech, visually distinct environment with gameplay focused on hacking and technology manipulation.
+- High-Security Vaults: Intense action areas with high rewards but increased risk.
+- Archival Rooms: Low action, puzzle-oriented areas requiring careful exploration.
+- Service Tunnels: Mix of stealth and action, with narrow escapes and close-quarters encounters.
+- Automated Factories: Floors dedicated to automated manufacturing, with robotic patrols offering a high-tech twist on evasion.
+- Luxury Retail Spaces: Engage in cat-and-mouse chases among high-end shops, using crowds and displays as cover.
+- Cultural Spaces: Museums or art galleries within the skyscraper add thematic diversity and opportunities for creative interactions.
+- Underground Facilities: Explore basements or sublevels with a different, more industrial or secretive feel compared to the upper floors.
+- Atriums and Water Features: Utilize large open spaces with natural light and indoor waterfalls or rivers for dramatic effect and gameplay variety.
+- Augmented Reality Zones: Floors where augmented reality is used for entertainment or exhibition, altering player perception and strategy.
+
+### Engaging Gameplay Mechanics
+- Elevator Shafts and Stairwells: Key for vertical exploration, offering both stealth and action opportunities.
+- Environmental Puzzles: Leverage the building's infrastructure for puzzles that unlock new areas or disable security.
+- Dynamic Events: Include security lockdowns or unexpected architectural features to introduce new challenges.
+- Security Systems: Diverse security measures like cameras and laser tripwires demand varied player strategies.
+- Gravitational Variations: Experiment with floors that have altered gravity fields, challenging players to adapt their movement and strategies.
+- Weather Control Systems: Allow players to manipulate the building's weather systems, creating fog or rain inside to aid in stealth.
+- Adaptive AI Security: Implement AI that learns from player strategies, forcing players to constantly evolve their approach.
+- Interactive NPCs: Include non-player characters with whom players can interact, bribe, or coerce to gain access or information.
+- Ziplines Between Buildings: For quick escapes or to access different parts of the skyscraper.
+- Interactive Security Panels: Hack or disable to access restricted areas or create distractions.
+- Variable Time of Day: Dynamic lighting conditions affecting visibility and guard behavior.
+- Evolving Security Measures: Guards change patrol patterns or increase in number based on player actions.
+Design Goals
+- Diversity: Ensure each floor or section of the skyscraper offers a unique gameplay experience, visually and mechanically.
+- Interactivity: Maximize the player's ability to interact with the environment, emphasizing strategy and choice.
+- Adaptability: Allow for multiple approaches to objectives, catering to different play styles and strategies.
+- Narrative Integration: Use the environment to tell the story of the skyscraper, its inhabitants, and the heist itself.
+- Modularity: Design floors with modular elements to facilitate easy adjustments and iterations.
+- Verticality: Emphasize the skyscraper's height in level design, encouraging players to look up and down, not just forward.
+- Feedback Loops: Integrate feedback mechanisms for player actions, especially in stealth and puzzle-solving scenarios.
+- Playtesting: Regularly test levels for pacing, difficulty, and engagement, adjusting based on player feedback.

@@ -45,9 +45,9 @@ shadow_mesh = SubResource("ArrayMesh_qgytd")
 render_priority = 0
 shader = ExtResource("2_qxsdd")
 shader_parameter/specular = null
-shader_parameter/offset = 0.05
-shader_parameter/opacity = 0.5
-shader_parameter/darkness_scale = 1.0
+shader_parameter/offset = 0.025
+shader_parameter/opacity = 0.8
+shader_parameter/darkness_scale = 1.6
 shader_parameter/glass_texture = ExtResource("3_t5qdn")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_hhheg"]
@@ -86,9 +86,9 @@ shadow_mesh = SubResource("ArrayMesh_hhheg")
 render_priority = 0
 shader = ExtResource("2_qxsdd")
 shader_parameter/specular = null
-shader_parameter/offset = 0.05
-shader_parameter/opacity = 0.5
-shader_parameter/darkness_scale = 1.0
+shader_parameter/offset = 0.025
+shader_parameter/opacity = 0.8
+shader_parameter/darkness_scale = 1.6
 shader_parameter/glass_texture = ExtResource("3_t5qdn")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_tghgg"]
@@ -127,9 +127,9 @@ shadow_mesh = SubResource("ArrayMesh_tghgg")
 render_priority = 0
 shader = ExtResource("2_qxsdd")
 shader_parameter/specular = null
-shader_parameter/offset = 0.05
-shader_parameter/opacity = 0.5
-shader_parameter/darkness_scale = 1.0
+shader_parameter/offset = 0.025
+shader_parameter/opacity = 0.8
+shader_parameter/darkness_scale = 1.6
 shader_parameter/glass_texture = ExtResource("3_t5qdn")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_fhaxf"]
@@ -166,9 +166,9 @@ shadow_mesh = SubResource("ArrayMesh_fhaxf")
 render_priority = 0
 shader = ExtResource("2_qxsdd")
 shader_parameter/specular = null
-shader_parameter/offset = 0.05
-shader_parameter/opacity = 0.5
-shader_parameter/darkness_scale = 1.0
+shader_parameter/offset = 0.025
+shader_parameter/opacity = 0.8
+shader_parameter/darkness_scale = 1.6
 shader_parameter/glass_texture = ExtResource("3_t5qdn")
 
 [sub_resource type="ArrayMesh" id="ArrayMesh_r2f2o"]
@@ -205,8 +205,8 @@ shadow_mesh = SubResource("ArrayMesh_r2f2o")
 render_priority = 0
 shader = ExtResource("2_qxsdd")
 shader_parameter/specular = 1.0
-shader_parameter/offset = 0.05
-shader_parameter/opacity = 0.5
+shader_parameter/offset = 0.025
+shader_parameter/opacity = 0.8
 shader_parameter/darkness_scale = 1.6
 shader_parameter/glass_texture = ExtResource("3_t5qdn")
 

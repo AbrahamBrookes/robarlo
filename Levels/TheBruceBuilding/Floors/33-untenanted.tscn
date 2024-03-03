@@ -1,0 +1,71 @@
+[gd_scene load_steps=5 format=3 uid="uid://cowefqigjly25"]
+
+[ext_resource type="PackedScene" uid="uid://bjkgehv44a2jb" path="res://Levels/TheBruceBuilding/Floors/33-untenanted.glb" id="1_thfbu"]
+[ext_resource type="Script" path="res://Levels/TheBruceBuilding/Floors/33-untenanted.gd" id="1_xnewq"]
+[ext_resource type="PackedScene" uid="uid://bgnxv35skg5wb" path="res://Art/Gameplay/smashy_glass/glass_square.tscn" id="3_dcafj"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_hilvp"]
+size = Vector3(29.5, 3, 19.5)
+
+[node name="33-untenanted" type="Node3D"]
+script = ExtResource("1_xnewq")
+
+[node name="33-untenanted" parent="." instance=ExtResource("1_thfbu")]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.938824, -0.195964, -0.283209, 0.343298, 0.466843, 0.814988, -0.0274945, -0.862355, 0.505557, 5.96046e-08, 2.34707, 0.172332)
+
+[node name="glass_square" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(2.65, 0, 0, 0, 1.5, 0, 0, 0, 1, -11.75, 0, 9.9)
+
+[node name="glass_square6" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1.5, 0, 1, 0, -4.37114e-08, -14.75, 0, 8)
+
+[node name="glass_square7" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(-7.43094e-08, 0, -1, 0, 1.5, 0, 1.7, 0, -4.37114e-08, -14.75, 0, 4.7)
+
+[node name="glass_square9" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(-7.43094e-08, 0, -1, 0, 1.5, 0, 1.7, 0, -4.37114e-08, -14.75, 0, -4.7)
+
+[node name="glass_square8" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(-1.04907e-07, 0, -1, 0, 1.5, 0, 2.4, 0, -4.37114e-08, -14.75, 0, -6.70552e-07)
+
+[node name="glass_square10" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1.5, 0, 1, 0, -4.37114e-08, 14.85, 0, 8)
+
+[node name="glass_square11" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(-7.43094e-08, 0, -1, 0, 1.5, 0, 1.7, 0, -4.37114e-08, 14.85, 0, 4.7)
+
+[node name="glass_square12" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(-7.43094e-08, 0, -1, 0, 1.5, 0, 1.7, 0, -4.37114e-08, 14.85, 0, -4.7)
+
+[node name="glass_square13" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(-1.04907e-07, 0, -1, 0, 1.5, 0, 2.4, 0, -4.37114e-08, 14.85, 0, -6.70552e-07)
+
+[node name="glass_square5" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(2.7, 0, 0, 0, 1.5, 0, 0, 0, 1, 0, 0, 9.9)
+
+[node name="glass_square4" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(2.625, 0, 0, 0, 1.5, 0, 0, 0, 1, 11.775, 0, 9.9)
+
+[node name="glass_square2" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(2.75, 0, 0, 0, 1.5, 0, 0, 0, 1, -6.05, 0, 9.9)
+
+[node name="glass_square3" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(2.775, 0, 0, 0, 1.5, 0, 0, 0, 1, 6.075, 0, 9.9)
+
+[node name="glass_square16" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(2.75, 0, 0, 0, 1.5, 0, 0, 0, 1, -6.05, 0, -10)
+
+[node name="glass_square17" parent="." instance=ExtResource("3_dcafj")]
+transform = Transform3D(2.775, 0, 0, 0, 1.5, 0, 0, 0, 1, 6.075, 0, -10)
+
+[node name="whole_floor_trigger" type="Area3D" parent="."]
+collision_layer = 31
+collision_mask = 31
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="whole_floor_trigger"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+shape = SubResource("BoxShape3D_hilvp")
+
+[connection signal="body_entered" from="whole_floor_trigger" to="." method="on_floor_entered"]

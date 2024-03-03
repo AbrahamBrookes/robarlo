@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=3 uid="uid://cl5tf0kvr4rpn"]
+
+[ext_resource type="PackedScene" uid="uid://cowefqigjly25" path="res://Levels/TheBruceBuilding/Floors/33-untenanted.tscn" id="1_ecug2"]
+[ext_resource type="Script" path="res://Levels/TheBruceBuilding/the_bruce_building.gd" id="1_uy65d"]
+[ext_resource type="PackedScene" uid="uid://5oyo75w8bmvq" path="res://player_character.tscn" id="2_trrtg"]
+
+[node name="TheBruceBuilding" type="Node3D"]
+script = ExtResource("1_uy65d")
+
+[node name="Node3D" parent="." instance=ExtResource("2_trrtg")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.57907, -0.0199998, 1.97654)
+
+[node name="floors" type="Node3D" parent="."]
+
+[node name="33-untenanted" parent="floors" instance=ExtResource("1_ecug2")]
+
+[node name="33-untenanted2" parent="floors" instance=ExtResource("1_ecug2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.2, 0)
+
+[node name="33-untenanted3" parent="floors" instance=ExtResource("1_ecug2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 6.4, 0)
+
+[node name="33-untenanted4" parent="floors" instance=ExtResource("1_ecug2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 9.6, 0)
+
+[node name="33-untenanted5" parent="floors" instance=ExtResource("1_ecug2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.8, 0)
+
+[connection signal="floor_entered" from="floors/33-untenanted" to="." method="on_floor_entered"]
+[connection signal="floor_entered" from="floors/33-untenanted2" to="." method="on_floor_entered"]
+[connection signal="floor_entered" from="floors/33-untenanted3" to="." method="on_floor_entered"]
+[connection signal="floor_entered" from="floors/33-untenanted4" to="." method="on_floor_entered"]
+[connection signal="floor_entered" from="floors/33-untenanted5" to="." method="on_floor_entered"]
